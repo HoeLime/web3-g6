@@ -1,14 +1,59 @@
-\documentclass{article}
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
+
 \title{CS 646 Blockchain and Cryptocurrency \\
 Final Project Report}
-\author{Obie Carnathan, Joe Green, Briggs Cude, Trent Davis}
-\date{December 6, 2024}
+
+\author{\IEEEauthorblockN{Obie Carnathan}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{Briggs Cude}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{Trent Davis}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{Joseph Green}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
+
 \maketitle
 
+\begin{abstract}
+This document is a model and instructions for \LaTeX.
+This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+or Math in Paper Title or Abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
+
 \section{Introduction}
+This document aims to provide information about the background and application of cryptocurrency and blockchain. The blockchain is the chain of transaction hashes that goes back to the original transaction of the cryptocurrency. This project focuses on Ethereum, the Ethereum blockchain, and how Ethereum and the Ethereum blockchain can be used to create a smart contract. Smart contracts can be used for many different Web3 products, including non-fungible tokens and, for the sake of this report, a voting system. The voting system facilitates the creation of candidates, the creation of user profiles, the passing out of tokens, and the spending of the token so that the user can place their vote. 
 
 \section{Background}
+For a peer-to-peer version of electronic cash to work, it must be ensured that the electronic cash is only spent once and is not victim to double-spending. Double spending is the process in which a digital currency coin could be used in one transaction as a payment and in another transaction in the same way. This would incorrectly allow the spender to spend the same coin twice, which is impossible with physical fiat cash. One effective way to mitigate double spending would be to sign the transaction with a signature to show that the currency was spent by a legitimate source in the correct format. This signed transaction is then hashed through an encryption method, the method of which changes between the respective Cryptocurrencies. This hash is then added to a list of hashes. This list of hashes is linear, with each new transaction being added to the top of the chain of hashes. This chain is then referred to as The Blockchain.
 \subsection{Blockchain Technology}
 \subsection{Smart Contracts}
 
