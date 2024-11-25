@@ -1,0 +1,483 @@
+{
+    "accounts": {
+      "account{0}": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
+    },
+    "linkReferences": {},
+    "transactions": [
+      {
+        "timestamp": 1732498332341,
+        "record": {
+          "value": "0",
+          "inputs": "(address)",
+          "parameters": [
+            "0xC8508cFdF6a936Fe239A1402670b85E9f0DA8182"
+          ],
+          "name": "",
+          "type": "constructor",
+          "abi": "0xeed09010c382293aa574a8cb79c02e9fd3b571fde4f44f9ce03f576b8b2cda48",
+          "contractName": "Voting",
+          "bytecode": "608060405234801561000f575f80fd5b50604051611036380380611036833981810160405281019061003191906100d5565b8060035f6101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050610100565b5f80fd5b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f6100a48261007b565b9050919050565b6100b48161009a565b81146100be575f80fd5b50565b5f815190506100cf816100ab565b92915050565b5f602082840312156100ea576100e9610077565b5b5f6100f7848285016100c1565b91505092915050565b610f298061010d5f395ff3fe608060405234801561000f575f80fd5b506004361061007b575f3560e01c8063462e91ec11610059578063462e91ec146100eb5780638e7ea5b214610107578063a3ec138d14610125578063fc0c546a146101555761007b565b80630121b93f1461007f5780632d35a8a21461009b5780633477ee2e146100b9575b5f80fd5b61009960048036038101906100949190610697565b610173565b005b6100a36103ef565b6040516100b091906106d1565b60405180910390f35b6100d360048036038101906100ce9190610697565b6103f5565b6040516100e29392919061075a565b60405180910390f35b610105600480360381019061010091906108c2565b6104a0565b005b61010f610514565b60405161011c9190610909565b60405180910390f35b61013f600480360381019061013a9190610983565b610611565b60405161014c91906109c8565b60405180910390f35b61015d61062e565b60405161016a9190610a3c565b60405180910390f35b60015f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f9054906101000a900460ff16156101fd576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016101f490610a9f565b60405180910390fd5b5f60035f9054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231336040518263ffffffff1660e01b81526004016102589190610acc565b602060405180830381865afa158015610273573d5f803e3d5ffd5b505050506040513d601f19601f820116820180604052508101906102979190610af9565b116102d7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016102ce90610b6e565b60405180910390fd5b6001805f3373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020015f205f6101000a81548160ff02191690831515021790555060035f9054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231336040518263ffffffff1660e01b81526004016103859190610acc565b602060405180830381865afa1580156103a0573d5f803e3d5ffd5b505050506040513d601f19601f820116820180604052508101906103c49190610af9565b5f808381526020019081526020015f206002015f8282546103e59190610bb9565b9250508190555050565b60025481565b5f602052805f5260405f205f91509050805f01549080600101805461041990610c19565b80601f016020809104026020016040519081016040528092919081815260200182805461044590610c19565b80156104905780601f1061046757610100808354040283529160200191610490565b820191905f5260205f20905b81548152906001019060200180831161047357829003601f168201915b5050505050908060020154905083565b60025f8154809291906104b290610c49565b9190505550604051806060016040528060025481526020018281526020015f8152505f8060025481526020019081526020015f205f820151815f015560208201518160010190816105039190610e24565b506040820151816002015590505050565b60605f805f600190505b600254811161056f57825f808381526020019081526020015f2060020154111561055c575f808281526020019081526020015f206002015492508091505b808061056790610c49565b91505061051e565b505f808281526020019081526020015f20600101805461058e90610c19565b80601f01602080910402602001604051908101604052809291908181526020018280546105ba90610c19565b80156106055780601f106105dc57610100808354040283529160200191610605565b820191905f5260205f20905b8154815290600101906020018083116105e857829003601f168201915b50505050509250505090565b6001602052805f5260405f205f915054906101000a900460ff1681565b60035f9054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b5f604051905090565b5f80fd5b5f80fd5b5f819050919050565b61067681610664565b8114610680575f80fd5b50565b5f813590506106918161066d565b92915050565b5f602082840312156106ac576106ab61065c565b5b5f6106b984828501610683565b91505092915050565b6106cb81610664565b82525050565b5f6020820190506106e45f8301846106c2565b92915050565b5f81519050919050565b5f82825260208201905092915050565b8281835e5f83830152505050565b5f601f19601f8301169050919050565b5f61072c826106ea565b61073681856106f4565b9350610746818560208601610704565b61074f81610712565b840191505092915050565b5f60608201905061076d5f8301866106c2565b818103602083015261077f8185610722565b905061078e60408301846106c2565b949350505050565b5f80fd5b5f80fd5b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b6107d482610712565b810181811067ffffffffffffffff821117156107f3576107f261079e565b5b80604052505050565b5f610805610653565b905061081182826107cb565b919050565b5f67ffffffffffffffff8211156108305761082f61079e565b5b61083982610712565b9050602081019050919050565b828183375f83830152505050565b5f61086661086184610816565b6107fc565b9050828152602081018484840111156108825761088161079a565b5b61088d848285610846565b509392505050565b5f82601f8301126108a9576108a8610796565b5b81356108b9848260208601610854565b91505092915050565b5f602082840312156108d7576108d661065c565b5b5f82013567ffffffffffffffff8111156108f4576108f3610660565b5b61090084828501610895565b91505092915050565b5f6020820190508181035f8301526109218184610722565b905092915050565b5f73ffffffffffffffffffffffffffffffffffffffff82169050919050565b5f61095282610929565b9050919050565b61096281610948565b811461096c575f80fd5b50565b5f8135905061097d81610959565b92915050565b5f602082840312156109985761099761065c565b5b5f6109a58482850161096f565b91505092915050565b5f8115159050919050565b6109c2816109ae565b82525050565b5f6020820190506109db5f8301846109b9565b92915050565b5f819050919050565b5f610a046109ff6109fa84610929565b6109e1565b610929565b9050919050565b5f610a15826109ea565b9050919050565b5f610a2682610a0b565b9050919050565b610a3681610a1c565b82525050565b5f602082019050610a4f5f830184610a2d565b92915050565b7f596f75206861766520616c726561647920766f746564000000000000000000005f82015250565b5f610a896016836106f4565b9150610a9482610a55565b602082019050919050565b5f6020820190508181035f830152610ab681610a7d565b9050919050565b610ac681610948565b82525050565b5f602082019050610adf5f830184610abd565b92915050565b5f81519050610af38161066d565b92915050565b5f60208284031215610b0e57610b0d61065c565b5b5f610b1b84828501610ae5565b91505092915050565b7f596f75206e65656420746f6b656e7320746f20766f74650000000000000000005f82015250565b5f610b586017836106f4565b9150610b6382610b24565b602082019050919050565b5f6020820190508181035f830152610b8581610b4c565b9050919050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52601160045260245ffd5b5f610bc382610664565b9150610bce83610664565b9250828201905080821115610be657610be5610b8c565b5b92915050565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52602260045260245ffd5b5f6002820490506001821680610c3057607f821691505b602082108103610c4357610c42610bec565b5b50919050565b5f610c5382610664565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8203610c8557610c84610b8c565b5b600182019050919050565b5f819050815f5260205f209050919050565b5f6020601f8301049050919050565b5f82821b905092915050565b5f60088302610cec7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610cb1565b610cf68683610cb1565b95508019841693508086168417925050509392505050565b5f610d28610d23610d1e84610664565b6109e1565b610664565b9050919050565b5f819050919050565b610d4183610d0e565b610d55610d4d82610d2f565b848454610cbd565b825550505050565b5f90565b610d69610d5d565b610d74818484610d38565b505050565b5b81811015610d9757610d8c5f82610d61565b600181019050610d7a565b5050565b601f821115610ddc57610dad81610c90565b610db684610ca2565b81016020851015610dc5578190505b610dd9610dd185610ca2565b830182610d79565b50505b505050565b5f82821c905092915050565b5f610dfc5f1984600802610de1565b1980831691505092915050565b5f610e148383610ded565b9150826002028217905092915050565b610e2d826106ea565b67ffffffffffffffff811115610e4657610e4561079e565b5b610e508254610c19565b610e5b828285610d9b565b5f60209050601f831160018114610e8c575f8415610e7a578287015190505b610e848582610e09565b865550610eeb565b601f198416610e9a86610c90565b5f5b82811015610ec157848901518255600182019150602085019450602081019050610e9c565b86831015610ede5784890151610eda601f891682610ded565b8355505b6001600288020188555050505b50505050505056fea2646970667358221220ef4e2e33176cea99388f69df7ed6bc7dec1b8251fb92b96f18fce80b3251ac1a64736f6c634300081a0033",
+          "linkReferences": {},
+          "from": "account{0}"
+        }
+      }
+    ],
+    "abis": {
+        "0xeed09010c382293aa574a8cb79c02e9fd3b571fde4f44f9ce03f576b8b2cda48": [
+          {
+            "inputs": [
+              {
+                "internalType": "string",
+                "name": "_name",
+                "type": "string"
+              }
+            ],
+            "name": "addCandidate",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "_candidateId",
+                "type": "uint256"
+              }
+            ],
+            "name": "vote",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "name": "candidates",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "voteCount",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "candidatesCount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getWinner",
+            "outputs": [
+              {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "token",
+            "outputs": [
+              {
+                "internalType": "contract VotingToken",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "name": "voters",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ],
+        "0x2b13297a802c8224b1f6c0ff36e403b497ae103621dabd5962ee6f88a1760ce7": [
+          {
+            "inputs": [
+              {
+                "internalType": "string",
+                "name": "_name",
+                "type": "string"
+              }
+            ],
+            "name": "addCandidate",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              }
+            ],
+            "name": "registerUser",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "_candidateId",
+                "type": "uint256"
+              }
+            ],
+            "name": "vote",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "name": "candidates",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "voteCount",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "candidatesCount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getWinner",
+            "outputs": [
+              {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "token",
+            "outputs": [
+              {
+                "internalType": "contract VotingToken",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "name": "voters",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ],
+        "0xe6f43518784f82ebe851e5a79a1c69e498372050aa6722aa210cb35b59fc207c": [
+          {
+            "inputs": [
+              {
+                "internalType": "string",
+                "name": "_name",
+                "type": "string"
+              }
+            ],
+            "name": "addCandidate",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              }
+            ],
+            "name": "registerUser",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "_candidateId",
+                "type": "uint256"
+              }
+            ],
+            "name": "vote",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "name": "candidates",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "voteCount",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "candidatesCount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "_candidateId",
+                "type": "uint256"
+              }
+            ],
+            "name": "getCandidate",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getCandidatesCount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getWinner",
+            "outputs": [
+              {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "token",
+            "outputs": [
+              {
+                "internalType": "contract VotingToken",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "name": "voters",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ]
+      }
+    }

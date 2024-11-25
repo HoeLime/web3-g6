@@ -2,7 +2,7 @@ import Web3 from 'web3';
 
 let web3: Web3;
 let contract: any;
-const contractAddress = 'YOUR_CONTRACT_ADDRESS';
+const contractAddress = 'YOUR_DEPLOYED_CONTRACT_ADDRESS';
 const contractABI: any[] = [/* YOUR_CONTRACT_ABI */];
 
 interface PageContent {
@@ -23,14 +23,14 @@ const pages: Record<string, PageContent> = {
         title: 'Register to Vote',
         content: `
             <h1>Register to Vote</h1>
-            <p>Registration page coming soon...</p>
+            <button id="registerButton">Register</button>
         `
     },
     vote: {
         title: 'Cast Your Vote',
         content: `
             <h1>Cast Your Vote</h1>
-            <p>Voting page coming soon...</p>
+            <div id="candidatesList"></div>
         `
     },
     dashboard: {
@@ -58,6 +58,13 @@ function updateContent(pageId: string): void {
         if (connectButton) {
             connectButton.addEventListener('click', connectWallet);
         }
+    } else if (pageId === 'register') {
+        const registerButton = document.getElementById('registerButton');
+        if (registerButton) {
+            registerButton.addEventListener('click', registerUser);
+        }
+    } else if (pageId === 'vote') {
+        displayCandidates();
     }
 }
 
@@ -85,9 +92,48 @@ async function initContract() {
     contract = new web3.eth.Contract(contractABI, contractAddress);
     document.getElementById('loginButton')!.style.display = 'none';
     document.getElementById('votingSection')!.style.display = 'block';
+    await addPredefinedCandidates();
 }
 
-async function vote(candidateId: number) {
+async function registerUser(): Promise<void> {
+    const accounts = await web3.eth.getAccounts();
+    const account = accounts[0];
+    const amount = web3.utils.toWei('10', 'ether'); // Example token amount
+    await contract.methods.registerUser(account, amount).send({ from: account });
+    alert('User registered successfully!');
+}
+
+async function addPredefinedCandidates(): Promise<void> {
+    const accounts = await web3.eth.getAccounts();
+    const account = accounts[0];
+    const candidates = ["Alice", "Bob"];
+    for (const candidate of candidates) {
+        await contract.methods.addCandidate(candidate).send({ from: account });
+    }
+    console.log('Predefined candidates added successfully!');
+}
+
+async function displayCandidates(): Promise<void> {
+    const candidatesListDiv = document.getElementById('candidatesList');
+    const candidatesCount = await contract.methods.getCandidatesCount().call();
+    
+    if (candidatesListDiv) {
+        candidatesListDiv.innerHTML = '';
+        for (let i = 1; i <= candidatesCount; i++) {
+            const candidate = await contract.methods.getCandidate(i).call();
+            const candidateElement = document.createElement('div');
+            candidateElement.innerHTML = `
+                <p>Candidate ${candidate[0]}: ${candidate[1]}</p>
+                <button onclick="vote(${candidate[0]})">Vote for ${candidate[1]}</button>
+            `;
+            candidatesListDiv.appendChild(candidateElement);
+        }
+    } else {
+        console.error('candidatesListDiv not found');
+    }
+}
+
+async function vote(candidateId: number): Promise<void> {
     const accounts = await web3.eth.getAccounts();
     const account = accounts[0];
     await contract.methods.vote(candidateId).send({ from: account });

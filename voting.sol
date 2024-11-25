@@ -59,9 +59,22 @@ contract Voting {
         token = VotingToken(tokenAddress);
     }
 
+    function getCandidate(uint _candidateId) public view returns (uint, string memory, uint) {
+    Candidate memory candidate = candidates[_candidateId];
+        return (candidate.id, candidate.name, candidate.voteCount);
+    }
+
+    function getCandidatesCount() public view returns (uint) {
+        return candidatesCount;
+    }
     function addCandidate(string memory _name) public {
         candidatesCount++;
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
+    }
+
+    function registerUser(address user, uint256 amount) public {
+        require(token.balanceOf(msg.sender) >= amount, "Insufficient tokens");
+        token.transfer(user, amount);
     }
 
     function vote(uint _candidateId) public {
