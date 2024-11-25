@@ -1,3 +1,10 @@
+import Web3 from 'web3';
+
+let web3: Web3;
+let contract: any;
+const contractAddress = 'YOUR_CONTRACT_ADDRESS';
+const contractABI: any[] = [/* YOUR_CONTRACT_ABI */];
+
 interface PageContent {
     title: string;
     content: string;
@@ -56,7 +63,17 @@ function updateContent(pageId: string): void {
 
 async function connectWallet(): Promise<void> {
     console.log('Connecting wallet...');
-    // Wallet connection logic will go here
+    if (window.ethereum) {
+        web3 = new Web3(window.ethereum);
+        try {
+            await window.ethereum.enable();
+            initContract();
+        } catch (error) {
+            console.error("User denied account access");
+        }
+    } else {
+        console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+    }
 }
 
 function handleNavigation(): void {
@@ -64,6 +81,19 @@ function handleNavigation(): void {
     updateContent(pageId);
 }
 
+async function initContract() {
+    contract = new web3.eth.Contract(contractABI, contractAddress);
+    document.getElementById('loginButton')!.style.display = 'none';
+    document.getElementById('votingSection')!.style.display = 'block';
+}
+
+async function vote(candidateId: number) {
+    const accounts = await web3.eth.getAccounts();
+    const account = accounts[0];
+    await contract.methods.vote(candidateId).send({ from: account });
+    alert('Vote cast successfully!');
+}
+
 // Event listeners
 window.addEventListener('hashchange', handleNavigation);
-window.addEventListener('DOMContentLoaded', handleNavigation); 
+window.addEventListener('DOMContentLoaded', handleNavigation);

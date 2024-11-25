@@ -2,17 +2,31 @@
   "name": "web3-g6",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:TD008/web3-g6.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TD008/web3-g6.git"
+  },
   "author": "trent <trentd@uab.edu>",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
     "solc": "^0.8.28",
-    "web3": "^4.14.0"
+    "web3": "^4.15.0"
   },
   "devDependencies": {
-    "@types/node": "^22.8.7",
+    "@types/node": "^22.9.3",
+    "@types/web3": "^1.0.20",
     "serve": "^14.2.4",
-    "typescript": "^5.6.3"
-  }
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "description": "A basic web application to interact with an Ethereum blockchain.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/TD008/web3-g6/issues"
+  },
+  "homepage": "https://github.com/TD008/web3-g6#readme"
 }

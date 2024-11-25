@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es6",                   // Compiles to ES6-compatible JavaScript
-    "module": "commonjs",               // Use CommonJS module system
-    "outDir": "./frontend/dist",                 // Compiled output goes to /dist
-    "strict": true,                     // Enables strict type checking
-    "esModuleInterop": true,            // Allows interoperability with CommonJS and ES6 modules
-    "forceConsistentCasingInFileNames": true
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./frontend/dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./node_modules/@types", "./src"]
   },
-  "include": ["frontend/src/**/*"],              // Includes all files in frontend/src folder
-  "exclude": ["node_modules", "frontend/dist"]   // Exclude certain directories
+  "include": ["frontend/src/**/*", "src/global.d.ts"],
+  "exclude": ["node_modules", "frontend/dist"]
 }
